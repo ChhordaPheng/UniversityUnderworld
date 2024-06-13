@@ -1,0 +1,33 @@
+.container{
+    margin-top: -30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.form-control:focus {
+    box-shadow: 1px 0px 1px 1px #9a9a99 !important;
+    border-color: #929191 !important; 
+    
+}
+input.form-control{
+    background-color: rgb(108,117,125);
+    border: 1px 1px 3px solid white;
+    color: white;
+}
+select{
+    background-color: rgb(108,117,125);
+    border: 3px 3px 3px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+label{
+    color: rgb(249, 247, 247);
+}
+option{
+    background-color: white;
+    color: black;
+}

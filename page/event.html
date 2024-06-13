@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Event</title>
+    <link rel="stylesheet" href="../script.js" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../vendor(library)/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../vendor(library)/Hover-master/css/hover.css" />
+    <link rel="stylesheet" href="../vendor(library)/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../vendor(library)/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/event.css">
+</head>
+
+<body class="bg-secondary ">
+    <nav class="navbar fixed-top  menu-shadow navbar-expand-lg bg-body-tertiary h5 z-1000" id="menu"
+        data-bs-theme="dark">
+        <div class="container-fluid bg-b">
+            <a href="index.html">
+                <img class="object-fit-cover" src="../image/logo.png" alt="" style="width: 200px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item hvr-underline-from-center">
+                        <a class="nav-link " aria-current="page" href="../page/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Admission
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Request Info</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Visit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Learning
+                        </a>
+                        <div class="row d-flex">
+                            <div class="col-6">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="contactUs.html">Financial</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Programming</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Science</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Media</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Designing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link hvr-underline-from-center active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            News & Events
+                        </a>
+                    </li>
+                    <li class="nav-item hvr-underline-from-center">
+                        <a class="nav-link menu-item" role="button" href="../page/aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item hvr-underline-from-center dropdown">
+                        <a class="nav-link menu-item" href="../page/contactUs.html">Contact US</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="login.html">
+                        <img src="../image/login.png" class=" h-100" style="width: 40px;" alt="">
+                    </a>
+                    <a href="login.html" class="text-decoration-none px-3 h5 py-1" style="color: #8b8d90" ;>Log In</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end menu -->
+
+
+    <div class="h-75 " style="margin-top: 115px; box-shadow: 1px 3px 10px black;">
+        <img class="rounded img-fluid w-100 object-fit-cover " src="../image/event.png" alt="">
+    </div>
+
+    <!-- end banner  -->
+
+    <div class="container-fluid  w-100 text-center">
+        <h1 class="text-warning fw-bold mt-5">Our Events</h1>
+        <div class="d-flex justify-content-center w-100 col-4">
+            <div class="bg-white rounded my-3" style="width: 100px; height: 3px"></div>
+            <div class="rounded my-3 mx-2" style="width: 30px;height: 3px;background-color: rgb(214, 194, 165);"></div>
+        </div>
+
+        <p class="text-white">Pleaese joint our events altogether thaks . </p>
+    </div>
+
+    <div class="container-xxl">
+        <div class="row p-2" >
+            <div id="events" class="d-flex flex-wrap " >
+
+            </div>
+        </div>
+    </div>
+
+    <!-- pagination -->
+
+    <div class="py-3 float-end mt-5 px-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous" style="border-radius: 50%;">
+                        <span aria-hidden="true" class="text-warning">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item px-2 mx-auto "><a class="page-link text-warning" href="#"
+                        style="border-radius: 50%;">1</a></li>
+                <li class="page-item"><a class="page-link text-warning" href="#" style="border-radius: 50%;">2</a></li>
+                <li class="page-item px-2"><a class="page-link text-warning" href="#" style="border-radius: 50%;">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link " href="#" aria-label="Next" style="border-radius: 50%;">
+                        <span aria-hidden="true" class="text-warning">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer ">
+
+        <section class=" ">
+            <div class=" container-fluid p-4 overflow-hidden " style="background-color: rgb(43,48,53);">
+                <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <a href="#!">
+                                <img src="../image/logo.png" alt="BootstrapBrain Logo" width="250">
+                            </a>
+                            <div class="container-fluid my-3">
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="col-3 border-light justify-content-xxl-between">
+                                            <i
+                                                class=" fa-brands fa-facebook-f fs-5 p-2 foot-icon rounded-circle social-icon"></i>
+                                        </div>
+                                        <div class="col-3">
+                                            <i
+                                                class="fa-brands fa-instagram fs-5 foot-icon p-2 rounded-circle social-icon"></i>
+                                        </div>
+                                        <div class="col-3">
+                                            <i
+                                                class="fa-brands fa-youtube fs-5 foot-icon p-2 rounded-circle social-icon"></i>
+                                        </div>
+                                        <div class="col-3 ">
+                                            <i
+                                                class="fa-brands fa-x-twitter fs-5 foot-icon p-2  rounded-circle social-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4 text-warning fw-bold">Information</h4>
+                            <address class="mb-2">
+                                <i class="fa-solid fa-house-chimney "></i>
+                                Tonle Mekong Street, Sangkat Chrouy Chanvar, Kan Chrouy Chanvar, Phnom Penh,
+                                Cambodia
+                            </address>
+                            <p class="mb-1">
+                                <a class="link-secondary text-decoration-none text-white" href="tel:+85593245094">
+                                    <i class="fa-solid fa-phone"></i>
+                                    (855) 93 24 50 94</a>
+                            </p>
+                            <p class="mb-0">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="fa-solid fa-envelope-open-text m-0"></i>
+                                </div>
+                                <div class="col-10">
+                                    <a class="link-secondary text-decoration-none m-0 text-white"
+                                        href="mailto:phengchhorda66@gmail.com">
+                                        phengchhorda66</a>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4 text-warning fw-bold">Learn More</h4>
+                            <ul class="list-unstyled ">
+                                <li class="mb-2 ">
+                                    <a href="#!" class="link-secondary text-decoration-none text-white">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        Home</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="link-secondary text-decoration-none text-white">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        About</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="link-secondary text-decoration-none text-white">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        Admission</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class="link-secondary text-decoration-none text-white">
+                                        <i class="fa-solid fa-angle-right hvr-icon-forward "></i>
+                                        Terms of Service</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="#!" class="link-secondary text-decoration-none text-white">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-4">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4 text-warning">Get in Touch</h4>
+                            <p class="mb-4">Enter your email to unlock 10% OFF .</p>
+                            <form action="#!">
+                                <div class="row gy-4">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="email-newsletter-addon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                </svg>
+                                            </span>
+                                            <input type="email" class="form-control" id="email-newsletter" value=""
+                                                placeholder="Your Email" aria-label="email-newsletter"
+                                                aria-describedby="email-newsletter-addon" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button class="btn btn-outline-warning" type="submit">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="../js/event.js"></script>
+
+</html>

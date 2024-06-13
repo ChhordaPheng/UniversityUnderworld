@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../script.js" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../vendor(library)/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../vendor(library)/Hover-master/css/hover.css" />
+  <link rel="stylesheet" href="../vendor(library)/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="../vendor(library)/fontawesome/css/fontawesome.min.css" />
+</head>
+
+<body class="bg-whi">
+  <nav class="navbar sticky-top  menu-shadow navbar-expand-lg bg-body-tertiary h5 z-1000 e" id="menu"
+    data-bs-theme="dark">
+    <div class="container-fluid bg-b">
+      <a href="index.html">
+        <img class="object-fit-cover" src="../image/logo.png" alt="" style="width: 200px" />
+      </a>
+      <button class="navbar-toggler rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item hvr-underline-from-center">
+            <a class="nav-link active" aria-current="page" href="../page/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Request Info</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Visit</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Learning
+            </a>
+            <div class="row d-flex">
+              <div class="col-6">
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="contactUs.html">Financial</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Programming</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Science</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Marketing</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Photography</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Designing</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link hvr-underline-from-center" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              News & Events
+            </a>
+          </li>
+          <li class="nav-item hvr-underline-from-center">
+            <a class="nav-link menu-item" role="button" href="../page/aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item hvr-underline-from-center dropdown">
+            <a class="nav-link menu-item" href="../page/contactUs.html">Contact US</a>
+          </li>
+        </ul>
+        <form class="d-flex active" role="search">
+          <img src="../image/login.png" class=" h-100" style="width: 40px;" alt="">
+          <a href="" class="text-decoration-none px-3 h5 py-1 " style="color: #8b8d90" ;>Log In</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end navbar -->
+
+  <section class="h-100 bg-secondary">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100 ">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0 bg-secondary ">
+              <div class="col-xl-6 d-none d-xl-block ">
+                <img src="https://etdesign.co/images/hero/hero-image-et-left.png" alt="Sample photo" class="w-100 p-5"
+                  ; style="margin-top: 200px; " />
+              </div>
+
+              <div class="col-xl-6 ">
+                <div class="card-body p-md-5 text-black ">
+                  <h3 class="mb-5 text-uppercase fs-2 fw-3 text-warning fw-bold ">Student registration form</h3>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example1m" required class="form-control form-control-lg " />
+                        <label class="form-label" for="form3Example1m">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example1n" required class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1n">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1m1">Mother's name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1n1">Father's name</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example8">Address</label>
+                  </div>
+
+                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                    <h6 class="mb-0 me-4">Gender: </h6>
+
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                        value="option1" />
+                      <label class="form-check-label" for="femaleGender">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline mb-0 me-4">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                        value="option2" />
+                      <label class="form-check-label" for="maleGender">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                        value="option3" />
+                      <label class="form-check-label" for="otherGender">Other</label>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+
+                      <select data-mdb-select-init class="border ">
+                        <option value="1">City</option>
+                        <option value="2">Phnom Penh</option>
+                        <option value="3">Banteay Meanchey</option>
+                        <option value="4"> Battambang </option>
+                        <option value="5"> Kampong Cham </option>
+                        <option value="6"> Kampong Chhnang </option>
+                        <option value="7"> Kampong Speu </option>
+                        <option value="8"> Kampong Thom </option>
+                        <option value="9"> Kampot </option>
+                        <option value="10"> Kandal </option>
+                        <option value="11"> Kep </option>
+                        <option value="12"> Koh Kong </option>
+                        <option value="13"> Kratié</option>
+                        <option value="14"> Mondulkiri </option>
+                        <option value="15"> Oddar Meanchey </option>
+                        <option value="16"> Pailin </option>
+                        <option value="17"> Preah Sihanouk </option>
+                        <option value="18"> Preah Vihear </option>
+                        <option value="19"> Prey Veng </option>
+                        <option value="20"> Pursat </option>
+                        <option value="21"> Ratanakiri</option>
+                        <option value="22"> Siem Reap </option>
+                        <option value="23"> Stung Treng </option>
+                        <option value="24"> Svay Rieng </option>
+                        <option value="25">Takéo</option>
+                        <option value="26">Tboung Khmum</option>
+                      </select>
+
+                    </div>
+                    <div class="col-md-6 mb-4">
+
+                      <select data-mdb-select-init class="border">
+                        <option value="1">Status</option>
+                        <option value="2">Single</option>
+                        <option value="3">Married</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="number" id="form3Example9" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example9">Phone Number</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" id="form3Example90" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example90">Email Address</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="text" id="form3Example99" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example99">Course</label>
+                  </div>
+
+                  <div data-mdb-input-init class="form-outline mb-4 d-flex ">
+                    <input type="password" id="form3Example97" class="form-control form-control-lg mx-1 fs-6 "
+                      placeholder="Password" />
+                    <input type="password" id="form3Example97" class="form-control form-control-lg mx-1 fs-6"
+                      placeholder="Confirm Password" />
+                  </div>
+
+                  <div class="d-flex justify-content-end pt-3">
+                    <!-- <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg">Reset all</button>
+                        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning btn-lg ms-2">Submit form</button> -->
+                    <input onclick="refreshPage()" type="reset" value="Reset" class="btn-reset btn btn-outline-dark border-light text-white mx-3 btn-sencondary ">
+                    <form id="myForm">
+                      <input type="submit" value="Submit" required class="btn btn-warning mx-1 submit" onclick="return confirm('Are you sure you want to submit?');">
+                    </form>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer ">
+
+    <section class="  bg-secondary  ">
+        <div class=" container-fluid p-4 overflow-hidden " style="background-color: rgb(43,48,53);">
+            <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                    <div class="widget">
+                        <a href="#!">
+                            <img src="../image/logo.png" alt="BootstrapBrain Logo" width="250">
+                        </a>
+                        <div class="container-fluid my-3">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-3 border-light justify-content-xxl-between">
+                                        <i
+                                            class=" fa-brands fa-facebook-f fs-5 p-2 foot-icon rounded-circle social-icon"></i>
+                                    </div>
+                                    <div class="col-3">
+                                        <i
+                                            class="fa-brands fa-instagram fs-5 foot-icon p-2 rounded-circle social-icon"></i>
+                                    </div>
+                                    <div class="col-3">
+                                        <i
+                                            class="fa-brands fa-youtube fs-5 foot-icon p-2 rounded-circle social-icon"></i>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <i
+                                            class="fa-brands fa-x-twitter fs-5 foot-icon p-2  rounded-circle social-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                    <div class="widget">
+                        <h4 class="widget-title mb-4 text-warning fw-bold">Information</h4>
+                        <address class="mb-2">
+                            <i class="fa-solid fa-house-chimney "></i>
+                            Tonle Mekong Street, Sangkat Chrouy Chanvar, Kan Chrouy Chanvar, Phnom Penh,
+                            Cambodia
+                        </address>
+                        <p class="mb-1">
+                            <a class="link-secondary text-decoration-none text-white" href="tel:+85593245094">
+                                <i class="fa-solid fa-phone"></i>
+                                (855) 93 24 50 94</a>
+                        </p>
+                        <p class="mb-0">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-envelope-open-text m-0"></i>
+                            </div>
+                            <div class="col-10">
+                                <a class="link-secondary text-decoration-none m-0 text-white"
+                                    href="mailto:phengchhorda66@gmail.com">
+                                    phengchhorda66</a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                    <div class="widget">
+                        <h4 class="widget-title mb-4 text-warning fw-bold">Learn More</h4>
+                        <ul class="list-unstyled ">
+                            <li class="mb-2 ">
+                                <a href="#!" class="link-secondary text-decoration-none text-white">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    Home</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="link-secondary text-decoration-none text-white">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    About</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="link-secondary text-decoration-none text-white">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    Admission</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!" class="link-secondary text-decoration-none text-white">
+                                    <i class="fa-solid fa-angle-right hvr-icon-forward "></i>
+                                    Terms of Service</a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="#!" class="link-secondary text-decoration-none text-white">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                    Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-4">
+                    <div class="widget">
+                        <h4 class="widget-title mb-4 text-warning">Get in Touch</h4>
+                        <p class="mb-4">Enter your email to unlock 10% OFF .</p>
+                        <form action="#!">
+                            <div class="row gy-4">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="email-newsletter-addon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="email" class="form-control bg-white" id="email-newsletter" value=""
+                                            placeholder="Your Email" aria-label="email-newsletter"
+                                            aria-describedby="email-newsletter-addon" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button class="btn btn-outline-warning" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+</body>
+<script src="../vendor(library)/bootstrap/js/bootstrap.bundle.js"></script>
+<script type="module" src="../script.js"></script>
+<script src="../vendor(library)/fontawesome/js/fontawesome.min.js"></script>
+<script>
+  function refreshPage() {
+  window.location.reload(); 
+}
+function confirmSubmit() {
+  return true; 
+}
+</script>
+</html>
