@@ -451,12 +451,11 @@
   }
 }
 .bgCourse {
-  background-image: url(https://campus.websitelayout.net/img/courses/c1.jpg);
+  background-image: url("https://campus.websitelayout.net/img/courses/c1.jpg");
   background-color: rgba(0, 0, 0, 0.649);
   object-fit: cover;
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 .blurCourse {
@@ -466,27 +465,27 @@
 }
 
 .course1 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c1.jpg');
+  background-image: url('../image/financial.png');
 }
 
 .course2 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c3.jpg');
+  background-image: url('../image/programming.png');
 }
 
 .course3 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c5.jpg');
+  background-image: url('../image/science.png');
 }
 
 .course4 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c2.jpg');
+  background-image: url('../image/Marketing.png');
 }
 
 .course5 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c4.jpg');
+  background-image: url('../image/Photography.png');
 }
 
 .course6 {
-  background-image: url('https://campus.websitelayout.net/img/courses/c6.jpg');
+  background-image: url('../image/design.png');
 }
 
 .event {
