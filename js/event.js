@@ -2,15 +2,15 @@ const events = [
     {
         Image : "../image/charity.jpg",
         date : "05",
-        month : "June",
+        month : "July",
         year : "2024",
-        title : "ទិវាអភិរក្សបរិស្ថាន",
+        title : "ការបរិច្ចាកឈាម",
         time : "9:00 am - 12:00 pm",
     },
     {
         Image : "../image/cityCleanUp.jpg",
         date : "12",
-        month : "June",
+        month : "March",
         year : "2024",
         title : "សម្អាតបរិស្ថាន",
         time : "3:00 pm - 6:00 pm",
