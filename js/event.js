@@ -10,7 +10,7 @@ const events = [
     {
         Image : "../image/cityCleanUp.jpg",
         date : "12",
-        month : "March",
+        month : "jan",
         year : "2024",
         title : "សម្អាតបរិស្ថាន",
         time : "3:00 pm - 6:00 pm",
@@ -18,7 +18,7 @@ const events = [
     {
         Image : "../image/concert.jpg",
         date : "25",
-        month : "August",
+        month : "sep",
         year : "2024",
         title : "ការប្រគុំតន្រ្តី",
         time : "10:00 am - 10:00 pm",
@@ -34,7 +34,7 @@ const events = [
     {
         Image : "../image/trip.jpg",
         date : "10",
-        month : "August",
+        month : "may",
         year : "2024",
         title : "បោះជំរុំ",
         time : "11:00 am - 2:00 pm",

@@ -80,9 +80,9 @@ function lecturer() {
             <div class="card-teacher">
                 <img class="img-fluid rounded" src="${items.img}" alt="">
                 <div class="p-1 text-white">
-                    <h1 class="text-uppercase fs-5 mx-4 my-1  ">${items.name}</h1>
+                    <h1 class="text-uppercase fs-5 mx-4 my-1 ">${items.name}</h1>
                     <div class="bg-white w-100 my-3 " style="height: 1px;"></div>
-                    <p class="fs-6 text-white">${items.national}</p>
+                    <p class="fs-6 text-warning">${items.national}</p>
                     <p class="text-white">${items.position}</p>
                 </div>
             </div>
@@ -94,35 +94,35 @@ lecturer();
 
 const services = [
   {
-    name: "Accredited",
+    name: "សញ្ញាបត្រ",
     img: "../image/sevice1.png",
   },
   {
-    name: "Earn credits for your work/life experience",
+    name: "ការងារ",
     img: "../image/service2.png",
   },
   {
-    name: "One class at a time",
+    name: "សិក្សាតាមប្រព័ន្ធអនឡាញ",
     img: "../image/service3.png",
   },
   {
-    name: "Lifelong Career Services access",
+    name: "ការសិក្សាវគ្គខ្លិ",
     img: "../image/service4.png",
   },
   {
-    name: "100% online anytime, anywhere",
+    name: "ការប្រើប្រាស់កុំព្យូទ័រ",
     img: "../image/service5.png",
   },
   {
-    name: "24/7 support: tutoring Library",
+    name: "បើកដំណើរការ ២៤/៧",
     img: "../image/service6.png",
   },
   {
-    name: "Flexible start dates",
+    name: "បរិញ្ញាបត្រ",
     img: "../image/service7.png",
   },
   {
-    name: "Flexible start dates",
+    name: "កាដូរអនុស្សាវរីយ៍",
     img: "../image/service8.png",
   },
 ];
@@ -133,8 +133,8 @@ function work() {
     html += 
     `
         <div class="service">
-            <img src="${items.img}" alt="">
-            <p class="text-warning py-3 ">${items.name}</p>
+            <img class="img-fluid" src="${items.img}" alt="" style="width: 45%; height: 60%;">
+            <p class="text-warning py-3 text-center">${items.name}</p>
         </div>
     `;
   }
