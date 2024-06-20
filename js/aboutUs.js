@@ -12,7 +12,7 @@ const teachers = [
     img: "../image/t2.png",
   },
   {
-    name: "អគ្គនាយក ប៊ុន ថៃ ",
+    name: "អគ្គនាយក ហួន ចរិយា",
     position: "Senior Lecturer, Information Technology ",
     national: " តាកែវ",
     img: "../image/t3.png",
@@ -24,7 +24,7 @@ const teachers = [
     img: "../image/t4.png",
   },
   {
-    name: " បណ្ឌិត សូ ម៉េងលី",
+    name: " បណ្ឌិត មាន ព្រំស្រីពេជ្រ",
     position: "Assistant Professor, Software Engineering ",
     national: "កំពង់ចាម ",
     img: "../image/t5.png",
@@ -36,7 +36,7 @@ const teachers = [
     img: "../image/t6.png",
   },
   {
-    name: " បណ្ឌិត ងួន សុភាព​",
+    name: " បណ្ឌិត ងួន ម៉ាលិស",
     position: " Senior Lecturer, Computer Networks",
     national: "កំពង់ធំ ",
     img: "../image/t7.png",
@@ -54,7 +54,7 @@ const teachers = [
     img: "../image/t9.png",
   },
   {
-    name: " សាស្ត្រាចារ្យ គ្រី សុផាន់នី",
+    name: " សាស្ត្រាចារ្យ គ្រី ឧត្តម",
     position: " Senior Lecturer, Artificial Intelligence",
     national: " ឧត្តរមានជ័យ",
     img: "../image/t10.png",
@@ -66,7 +66,7 @@ const teachers = [
     img: "../image/t11.png",
   },
   {
-    name: " បណ្ឌិត យូរ សុធារ៉ា",
+    name: " សាស្ត្រាចារ្យ យូរ សុធារ៉ា",
     position: "Assistant Professor, Information and Communication Technology ",
     national: "ក្រចេះ ",
     img: "../image/t12.png",
