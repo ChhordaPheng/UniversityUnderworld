@@ -98,154 +98,107 @@
 
   <!-- end navbar -->
 
-  <section class="h-100 bg-dark " style="margin-top: 120px;">
+  <section class="h-100 bg-dark" style="margin-top: 120px;">
     <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col">
           <div class="card card-registration my-4">
-            <div class="row g-0 bg-dark ">
-              <div class="col-xl-6 d-none d-xl-block ">
-                <img src="https://etdesign.co/images/hero/hero-image-et-left.png" alt="Sample photo" class="w-100 p-5"
-                  ; style="margin-top: 200px; " />
+            <div class="row g-0 bg-dark">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://etdesign.co/images/hero/hero-image-et-left.png" alt="Sample photo" class="w-100 p-5" style="margin-top: 200px;" />
               </div>
-
-              <div class="col-xl-6 ">
-                <div class="card-body p-md-5 text-black ">
-                  <h3 class="mb-5 text-uppercase fs-2 fw-3 text-warning fw-bold ">Student registration form</h3>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example1m" required class="form-control form-control-lg " />
-                        <label class="form-label" for="form3Example1m">First name</label>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase fs-2 fw-3 text-warning fw-bold">Student registration form</h3>
+                  <form id="myForm" onsubmit="handleSubmit(event)">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form3Example1m" required class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example1m">First name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form3Example1n" required class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example1n">Last name</label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example1n" required class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1n">Last name</label>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form3Example1m1" class="form-control form-control-lg" required />
+                          <label class="form-label" for="form3Example1m1">Mother's name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form3Example1n1" class="form-control form-control-lg" required />
+                          <label class="form-label" for="form3Example1n1">Father's name</label>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1m1">Mother's name</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form3Example8" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form3Example8">Address</label>
+                    </div>
+                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                      <h6 class="mb-0 me-4">Gender: </h6>
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="female" required />
+                        <label class="form-check-label" for="femaleGender">Female</label>
+                      </div>
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input class="form-check-input" type="radio" name="gender" id="maleGender" value="male" required />
+                        <label class="form-check-label" for="maleGender">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="gender" id="otherGender" value="other" required />
+                        <label class="form-check-label" for="otherGender">Other</label>
                       </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1n1">Father's name</label>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <select data-mdb-select-init class="border form-select" required>
+                          <option value="" disabled selected>City</option>
+                          <option value="Phnom Penh">Phnom Penh</option>
+                          <option value="Banteay Meanchey">Banteay Meanchey</option>
+                          <!-- Add other options here -->
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <select data-mdb-select-init class="border form-select" required>
+                          <option value="" disabled selected>Status</option>
+                          <option value="Single">Single</option>
+                          <option value="Married">Married</option>
+                        </select>
                       </div>
                     </div>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example8">Address</label>
-                  </div>
-
-                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                    <h6 class="mb-0 me-4">Gender: </h6>
-
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                        value="option1" />
-                      <label class="form-check-label" for="femaleGender">Female</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="number" id="form3Example9" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form3Example9">Phone Number</label>
                     </div>
-
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                        value="option2" />
-                      <label class="form-check-label" for="maleGender">Male</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="form3Example90" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form3Example90">Email Address</label>
                     </div>
-
-                    <div class="form-check form-check-inline mb-0">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                        value="option3" />
-                      <label class="form-check-label" for="otherGender">Other</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form3Example99" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form3Example99">Course</label>
                     </div>
-
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-
-                      <select data-mdb-select-init class="border ">
-                        <option value="1">City</option>
-                        <option value="2">Phnom Penh</option>
-                        <option value="3">Banteay Meanchey</option>
-                        <option value="4"> Battambang </option>
-                        <option value="5"> Kampong Cham </option>
-                        <option value="6"> Kampong Chhnang </option>
-                        <option value="7"> Kampong Speu </option>
-                        <option value="8"> Kampong Thom </option>
-                        <option value="9"> Kampot </option>
-                        <option value="10"> Kandal </option>
-                        <option value="11"> Kep </option>
-                        <option value="12"> Koh Kong </option>
-                        <option value="13"> Kratié</option>
-                        <option value="14"> Mondulkiri </option>
-                        <option value="15"> Oddar Meanchey </option>
-                        <option value="16"> Pailin </option>
-                        <option value="17"> Preah Sihanouk </option>
-                        <option value="18"> Preah Vihear </option>
-                        <option value="19"> Prey Veng </option>
-                        <option value="20"> Pursat </option>
-                        <option value="21"> Ratanakiri</option>
-                        <option value="22"> Siem Reap </option>
-                        <option value="23"> Stung Treng </option>
-                        <option value="24"> Svay Rieng </option>
-                        <option value="25">Takéo</option>
-                        <option value="26">Tboung Khmum</option>
-                      </select>
-
+                    <div data-mdb-input-init class="form-outline mb-4 d-flex">
+                      <input type="password" id="password" class="form-control form-control-lg mx-1 fs-6" placeholder="Password" required />
+                      <input type="password" id="confirmPassword" class="form-control form-control-lg mx-1 fs-6" placeholder="Confirm Password" required />
                     </div>
-                    <div class="col-md-6 mb-4">
-
-                      <select data-mdb-select-init class="border">
-                        <option value="1">Status</option>
-                        <option value="2">Single</option>
-                        <option value="3">Married</option>
-                      </select>
-
+                    <div class="d-flex justify-content-end pt-3">
+                      <input onclick="refreshPage()" type="reset" value="Reset" class="btn-reset btn btn-outline-dark border-light text-white mx-3 btn-secondary">
+                      <input type="submit" value="Submit" class="btn btn-warning mx-1 submit">
                     </div>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="number" id="form3Example9" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example9">Phone Number</label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form3Example90" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example90">Email Address</label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example99">Course</label>
-                  </div>
-
-                  <div data-mdb-input-init class="form-outline mb-4 d-flex ">
-                    <input type="password" id="form3Example97" class="form-control form-control-lg mx-1 fs-6 "
-                      placeholder="Password" />
-                    <input type="password" id="form3Example97" class="form-control form-control-lg mx-1 fs-6"
-                      placeholder="Confirm Password" />
-                  </div>
-
-                  <div class="d-flex justify-content-end pt-3">
-                    <!-- <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg">Reset all</button>
-                        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning btn-lg ms-2">Submit form</button> -->
-                    <input onclick="refreshPage()" type="reset" value="Reset" class="btn-reset btn btn-outline-dark border-light text-white mx-3 btn-sencondary ">
-                    <form id="myForm">
-                      <input type="submit" value="Submit" required class="btn btn-warning mx-1 submit" onclick="return confirm('Are you sure you want to submit?');">
-                    </form>                  
-                  </div>
+                  </form>    
+                  <div id="successMessage" style="display: none;" class="alert alert-success mt-3">
+                    Form submitted successfully!
+                  </div>              
                 </div>
               </div>
             </div>
@@ -254,8 +207,7 @@
       </div>
     </div>
   </section>
-
-
+      
   <footer class="footer ">
 
     <section class="  ">
@@ -395,11 +347,17 @@
 <script type="module" src="../script.js"></script>
 <script src="../vendor(library)/fontawesome/js/fontawesome.min.js"></script>
 <script>
-  function refreshPage() {
-  window.location.reload(); 
-}
-function confirmSubmit() {
-  return true; 
-}
+  function refreshPage(){
+      document.getElementById('myForm').reset();
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    // Display success message
+    document.getElementById('successMessage').style.display = 'block';
+    // Reset the form
+    document.getElementById('myForm').reset();
+  }
 </script>
+
 </html>
