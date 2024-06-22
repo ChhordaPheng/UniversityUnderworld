@@ -505,7 +505,7 @@ p {
 }
 
 .blurCourse {
-  background-color: rgba(33, 37, 41, 0.514);
+  background-color: rgba(33, 37, 41, 0.619);
   backdrop-filter: blur(1px);
   width: 100%;
   overflow: hidden;
