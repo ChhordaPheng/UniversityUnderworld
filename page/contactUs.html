@@ -122,7 +122,9 @@
                                     rows="3"></textarea>
                             </div>
                             <div class="mb-3">
-                                <button class="btn btn-primary">Send Now</button>
+                                <button class="btn btn-primary save-btn">
+                                    Send Now
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -296,3 +298,12 @@
 <script src="../vendor(library)/fontawesome/js/fontawesome.min.js"></script>
 
 </html>
+<script>
+    save_btn = document.querySelector(".save-btn");
+    save_btn.onclick = function() {
+        this.innerHTML = `<div class="loader"></div>`;
+        setTimeout(() => {
+            this.innerHTML = "Sucessfully !"
+        },2000);
+    }
+</script>

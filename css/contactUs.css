@@ -23,13 +23,24 @@
 }
 
 .btn-primary {
-    background-color: #c1b688;
+    background-color: #c8b97b;
     border: #c1b688;
-
+    cursor: pointer;
+    display: grid;
+    place-content: center;
 }
 
 .btn-primary:hover {
     background-color: black !important;
+}
+.loader {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    animation: an1 1s ease infinite;
 }
 
 .form-control {
@@ -59,5 +70,13 @@ border: 2px solid #555;
         width: 100% !important;
         height: 500px !important;
         top: 0 !important;
+    }
+}
+@keyframes an1 {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
     }
 }
