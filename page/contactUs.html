@@ -107,7 +107,7 @@
 
                     <div class="col-md-6 first_col col-md-12 col-sm-12 ">
                         <h1 class="text-center mt-3 text-warning fs-1 active">Contact Us</h1>
-                        <form class="p-4 mt-5">
+                        <form class="p-4 mt-5" id="Form" >
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Enter your Name</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1" required>
@@ -122,10 +122,10 @@
                                     rows="3"></textarea>
                             </div>
                             <div class="mb-3">
-                                <button class="btn btn-primary save-btn">
+                                <button class="btn btn-primary save-btn" onsubmit="save_btn(event)">
                                     Send Now
                                 </button>
-                            </div>
+                            </div>                          
                         </form>
                     </div>
                     <div class="col-md-6 sec_col">
@@ -299,11 +299,23 @@
 
 </html>
 <script>
-    save_btn = document.querySelector(".save-btn");
-    save_btn.onclick = function() {
-        this.innerHTML = `<div class="loader"></div>`;
-        setTimeout(() => {
-            this.innerHTML = "Sucessfully !"
-        },2000);
-    }
+     const save_btn = document.querySelector(".save-btn");
+
+function refreshForm() {
+    document.getElementById('Form').reset(); 
+}
+
+function handleSubmit(event) {
+    event.preventDefault(); 
+    save_btn.innerHTML = `<div class="loader"></div>`;
+    
+    setTimeout(() => {
+        save_btn.innerHTML = "Successfully!";
+        refreshForm(); 
+    }, 2000);
+    
+    document.getElementById('successMessage').style.display = 'block';
+}
+
+document.getElementById('Form').addEventListener('submit', handleSubmit);
 </script>
