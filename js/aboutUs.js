@@ -1,6 +1,6 @@
 const teachers = [
   {
-    name: "នាយក ស្រេង សុវណ្ណ",
+    name: "នាយក ផេង​ ឆដា",
     position: "Director, Computer Science Department",
     national: "Phnom Penh",
     img: "../image/t1.png",
