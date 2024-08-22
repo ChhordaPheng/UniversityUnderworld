@@ -78,7 +78,7 @@ function lecturer() {
   for (items of teachers) {
     html += `
             <div class="card-teacher">
-                <img class="img-fluid rounded" src="${items.img}" alt="">
+                <img class="img-fluid rounded-top" src="${items.img}" alt="">
                 <div class="p-1 text-white">
                     <h1 class="text-uppercase fs-5 mx-4 my-1 ">${items.name}</h1>
                     <div class="bg-white w-100 my-3 " style="height: 1px;"></div>

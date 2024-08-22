@@ -6,6 +6,7 @@ const events = [
         year : "2024",
         title : "ការបរិច្ចាកឈាម",
         time : "9:00 am - 12:00 pm",
+        link : "blood.html",
     },
     {
         Image : "../image/cityCleanUp.jpg",
@@ -14,6 +15,7 @@ const events = [
         year : "2024",
         title : "សម្អាតបរិស្ថាន",
         time : "3:00 pm - 6:00 pm",
+        link : "cityCleaning.html",
     },
     {
         Image : "../image/concert.jpg",
@@ -22,6 +24,7 @@ const events = [
         year : "2024",
         title : "ការប្រគុំតន្រ្តី",
         time : "10:00 am - 10:00 pm",
+        link : "concert.html",
     },
     {
         Image : "../image/summer.avif",
@@ -30,6 +33,7 @@ const events = [
         year : "2024",
         title : "ការលំហែរនៅរដូវក្ដៅ",
         time : "2:00 pm - 5:00 pm",
+        link : "summer.html"
     },
     {
         Image : "../image/trip.jpg",
@@ -38,6 +42,7 @@ const events = [
         year : "2024",
         title : "បោះជំរុំ",
         time : "11:00 am - 2:00 pm",
+        link : "camping.html",
     },
     {
         Image : "../image/khmer-new-year.jpg",
@@ -46,14 +51,16 @@ const events = [
         year : "2024",
         title : "ពិធីបុណ្យចូលឆ្នាំខ្មែរ",
         time : "1:00 pm - 3:00 pm",
+        link : "khmerNewYear.html",
     },
     {
         Image : "../image/pchum-ben.jpg!w700wp",
-        date : "05",
-        month : "July",
+        date : "25",
+        month : "Sep",
         year : "2024",
         title : "ភ្ជុំបិណ្ឌ",
         time : "8:00 am - 11:00 am",
+        link : "pchomBen.html",
     },
     {
         Image : "../image/x-mas.avif",
@@ -62,6 +69,7 @@ const events = [
         year : "2024",
         title : "Christmas",
         time : "7:00 pm - 11:00 pm",
+        link : "x-mas.html",
     },
 ];
 
@@ -71,7 +79,9 @@ function renderEvents() {
     let html = "";
     for (let items of events) {
         html += `
+        
             <div class="event-card col-lg-3 col-md-4 col-sm-12 col-12 ">
+            <a href="${items.link}" class="text-decoration-none">
                 <img class=" rounded h-50 object-fit-cover " style="width: 95%;"  src="${items.Image}" alt="">
                 <div class="col-12 d-flex mt-3 ">
                     <div class="col-2 ">
@@ -92,7 +102,9 @@ function renderEvents() {
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
+            
         `;
     }
     eventsContainer.innerHTML += html;
